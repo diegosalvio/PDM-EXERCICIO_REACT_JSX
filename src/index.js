@@ -8,8 +8,8 @@ import './style.css'
 
 const App = () => {
 
-    const estiloCaixa = {
-        /* margin: 'auto', */
+    /* const estiloCaixa = {
+        // margin: 'auto',
         backgroundColor: '#EEE',
         width: '100%',
         height: '75',
@@ -18,7 +18,18 @@ const App = () => {
         display: 'flex',
         justifyContent: 'space-between'
 
+    } */
+
+    const estiloCaixa = {
+        margin: 'auto',
+        width: '90%', 
+        height: '30%',
+        backgroundColor: '#EEE',
+        padding: 12,
+        borderRadius: 8
     }
+
+
 
     
     let medicos = [ 'José da Silva',
@@ -26,9 +37,16 @@ const App = () => {
                     'Jaqueline Mendes']
     
     return (
-         <div style={{margin: 'auto', width: '90%', height: '30%' ,backgroundColor: '#EEE', padding: 12, borderRadius: 8}}>
+         <div style={estiloCaixa}>
              <label htmlFor="titulo" style={{display:'block', marginBottom: 4, textAlign: 'center'}}>Profissionais da Saúde</label>
-             <div style={estiloCaixa}>
+             <div style={{backgroundColor: '#EEE',
+                            width: '100%',
+                            height: '75',
+                            borderStyle: 'ridge',
+                            borderRadius: 8,
+                            display: 'flex',
+                            justifyContent: 'space-between'
+                        }}>
                  <div className="caixa">
                     <img id="img" src={medico1} />
                     <text id="text" >{medicos[0]}</text>
