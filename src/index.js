@@ -1,4 +1,10 @@
 /* eslint-disable jsx-a11y/alt-text */
+/*
+Nome dos integrantes:
+Diego Salvio
+Caique Trivino
+Gabriel Silveira 
+*/
 import React from 'react'
 import ReactDOM from 'react-dom'
 import medico1 from './images/medico1.jpg'
